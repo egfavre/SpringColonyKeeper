@@ -25,6 +25,15 @@ public class RestController {
         return "welcome";
     }
 
+    @RequestMapping(path = "/register", method = RequestMethod.GET)
+    public String register () { return "registration";}
+
+    @RequestMapping(path = "/dashboard", method = RequestMethod.GET)
+    public String login () { return "dashboard";}
+
+    @RequestMapping(path = "/admin", method = RequestMethod.GET)
+    public String admin () {return "admin";}
+
 
 }
 
