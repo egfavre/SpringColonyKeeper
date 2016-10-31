@@ -40,13 +40,13 @@ public class Animal {
     @Column
     Date wean;
 
-    @ManyToOne
+    @Column
     Cage cage;
 
-    @ManyToOne
+    @Column
     Treatment treatment;
 
-    @Column
+   @Column
     String Genotype;
 
     public Animal() {

@@ -20,7 +20,7 @@ public class Cage {
     @Column
     Person person;
 
-    @ManyToOne
+    @Column
     Room room;
 
 

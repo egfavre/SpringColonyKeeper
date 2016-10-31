@@ -50,7 +50,7 @@ public class Person {
     @Column
     Boolean vetTechRole;
 
-    @ManyToMany
+    @Column
     Training training;
 
 }

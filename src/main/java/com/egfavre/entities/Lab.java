@@ -15,16 +15,16 @@ public class Lab {
     @Column
     String labName;
 
-    @ManyToOne
+    @Column
     Person administrator;
 
-    @ManyToMany
+    @Column
     Person user;
 
-    @ManyToMany
+    @Column
     Protocol protocol;
 
-    @ManyToMany
+    @Column
     Person businessContact;
 
 
