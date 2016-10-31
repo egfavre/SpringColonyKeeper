@@ -6,11 +6,39 @@
 </head>
 <body>
 Lab:
+<select>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+</select>
+<br>
 Administrator:
-If you do not see your lab or administrator please contact the instituional database administrator to be added: LINK
-
+<select>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+</select>
+<br>
+If you do not see your lab or administrator please contact <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Your DBA</a>
+<br>
 Role requested:
-user: allows you to enter, edit and delete information pertaining to animal husbandry
+<br>
+<form>
+    <div class="multiselect">
+        <div class="selectBox" onclick="showCheckboxes()">
+            <div class="overSelect"></div>
+        </div>
+        <div id="checkboxes">
+            <label for="one"><input type="checkbox" id="one"/>user: allows you to run reports, enter, edit and delete information pertaining to animal husbandry</label>
+            <br><label for="two"><input type="checkbox" id="two"/>administrator: allows you to enter, edit and delete information pertaining to personnel and lab accounts </label>
+            <br><label for="three"><input type="checkbox" id="three"/>Veterinarian</label>
+            <br><label for="four"><input type="checkbox" id="four"/>Vet Tech</label>
+        </div>
+    </div>
+</form>
+
 administrator: allows you to enter, edit and delete information pertaining to personnel and lab accounts
 
 name
