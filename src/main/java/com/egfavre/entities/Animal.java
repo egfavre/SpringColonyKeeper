@@ -23,31 +23,31 @@ public class Animal {
     String sex;
 
     @Column
-    Date dob;
+    int dob;
 
     @Column
-    Date dod;
+    int dod;
 
     @Column
-    Date lastLitter;
+    int lastLitter;
 
     @Column
-    Date plug;
+    int plug;
 
     @Column
-    Date expectedDelivery;
+    int expectedDelivery;
 
     @Column
-    Date wean;
+    int wean;
 
-    @Column
+    @ManyToOne
     Cage cage;
 
-    @Column
+    @ManyToOne
     Treatment treatment;
 
-   @Column
-    String Genotype;
+    @Column
+    String genotype;
 
     public Animal() {
     }
@@ -84,51 +84,51 @@ public class Animal {
         this.sex = sex;
     }
 
-    public Date getDob() {
+    public int getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(int dob) {
         this.dob = dob;
     }
 
-    public Date getDod() {
+    public int getDod() {
         return dod;
     }
 
-    public void setDod(Date dod) {
+    public void setDod(int dod) {
         this.dod = dod;
     }
 
-    public Date getLastLitter() {
+    public int getLastLitter() {
         return lastLitter;
     }
 
-    public void setLastLitter(Date lastLitter) {
+    public void setLastLitter(int lastLitter) {
         this.lastLitter = lastLitter;
     }
 
-    public Date getPlug() {
+    public int getPlug() {
         return plug;
     }
 
-    public void setPlug(Date plug) {
+    public void setPlug(int plug) {
         this.plug = plug;
     }
 
-    public Date getExpectedDelivery() {
+    public int getExpectedDelivery() {
         return expectedDelivery;
     }
 
-    public void setExpectedDelivery(Date expectedDelivery) {
+    public void setExpectedDelivery(int expectedDelivery) {
         this.expectedDelivery = expectedDelivery;
     }
 
-    public Date getWean() {
+    public int getWean() {
         return wean;
     }
 
-    public void setWean(Date wean) {
+    public void setWean(int wean) {
         this.wean = wean;
     }
 
@@ -149,10 +149,10 @@ public class Animal {
     }
 
     public String getGenotype() {
-        return Genotype;
+        return genotype;
     }
 
     public void setGenotype(String genotype) {
-        Genotype = genotype;
+        this.genotype = genotype;
     }
 }

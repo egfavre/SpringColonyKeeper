@@ -1,6 +1,8 @@
 package com.egfavre.controllers;
 
+import com.egfavre.repositories.*;
 import org.h2.tools.Server;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +16,40 @@ import java.sql.SQLException;
  * Created by user on 10/4/16.
  */
 @Controller
-public class RestController {
+public class KeeperController {
+    @Autowired
+    AnimalRepository animals;
+
+    @Autowired
+    CageRepository cages;
+
+    @Autowired
+    LabRepository labs;
+
+    @Autowired
+    PersonRepository people;
+
+    @Autowired
+    ProtocolRepository protocols;
+
+    @Autowired
+    RoomRepository rooms;
+
+    @Autowired
+    TrainingRepository trainings;
+
+    @Autowired
+    TreatmentRepository treatments;
+
+    @Autowired
+    VetStaffRepository vetstaffs;
+
+    //create server connection
     @PostConstruct
-    public void init() throws SQLException, FileNotFoundException {
+    public void init() throws SQLException {
         Server.createWebServer().start();
     }
+
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public String welcome () {

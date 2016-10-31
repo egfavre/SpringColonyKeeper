@@ -43,6 +43,7 @@ dependencies {
 	compile('com.h2database:h2')
 	//compile('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile('org.hibernate:hibernate-java8:5.0.9.Final')
 }
 
 dependencyManagement {
