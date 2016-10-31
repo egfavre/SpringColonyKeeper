@@ -48,7 +48,7 @@ public class Person {
     @Column
     Boolean vetTechRole;
 
-    @Column
+    @ManyToOne
     Training training;
 
     public Person() {

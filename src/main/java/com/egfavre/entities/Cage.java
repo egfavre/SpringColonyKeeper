@@ -12,13 +12,13 @@ public class Cage {
     @GeneratedValue
     int id;
 
-    @Column
+    @ManyToOne
     Protocol protocol;
 
-    @Column
+    @ManyToOne
     Person person;
 
-    @Column
+    @ManyToOne
     Room room;
 
     public Cage() {
