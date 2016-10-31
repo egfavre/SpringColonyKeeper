@@ -5,6 +5,7 @@
     <title>Registration</title>
 </head>
 <body>
+<form action="/submittedReg" method="get">
 Lab:
 <select>
     <option value="volvo">Volvo</option>
@@ -23,6 +24,15 @@ Administrator:
 <br>
 If you do not see your lab or administrator please contact <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Your DBA</a>
 <br>
+<br>
+My Information:<br>
+First name: <input type="text" name="firstName"><br>
+Last name: <input type="text" name="lastName"><br>
+Username: <input type="text" name="username"><br>
+Password: <input type="password" name="password"><br>
+Email: <input type="email" name="email"><br>
+Phone: <input type="tel" name="phone"><br>
+Pager: <input type="number" name="pager"><br><br>
 Role requested:
 <br>
 <form>
@@ -38,17 +48,10 @@ Role requested:
         </div>
     </div>
 </form>
-
-administrator: allows you to enter, edit and delete information pertaining to personnel and lab accounts
-
-name
-email
-phone
-
-I need training
-I have been trained
-
-**message request to administrator for approval
-**message training staff
+<br><br>
+<input type="radio" name="needTraining"> I need training<br>
+<input type="radio" name="doNotNeedTraining"> I have been trained<br>
+    <button type="submit">Submit Registration</button>
+</form>
 </body>
 </html>
