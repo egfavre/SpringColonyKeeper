@@ -1,6 +1,7 @@
 package com.egfavre.entities;
 
 import javax.persistence.*;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -23,7 +24,7 @@ public class Animal {
     String sex;
 
     @Column
-    int dob;
+    Date dob;
 
     @Column
     int dod;
@@ -84,11 +85,11 @@ public class Animal {
         this.sex = sex;
     }
 
-    public int getDob() {
+    public Date getDob() {
         return dob;
     }
 
-    public void setDob(int dob) {
+    public void setDob(Date dob) {
         this.dob = dob;
     }
 
